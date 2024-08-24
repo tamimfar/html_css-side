@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@font-face {
+    font-family:Figtree;
+    src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+:root{   
+--Yellow: hsl(47, 88%, 63%);
+--White: hsl(0, 0%, 100%);
+--Gray-500: hsl(0, 0%, 42%);
+--Gray-950: hsl(0, 0%, 7%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+background-color:var(--Yellow );
+font-family:Figtree;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+.card__area{
+    background-color: var(--White);
+    border-radius: 10px;
+    border: 1px solid var(--Gray-950);
+    box-shadow: 7px 7px 0 var(--Gray-950);
+    padding: 15px;
+}
+.header__area{
+    width: 100%;
+    
+}
+.header__area svg{
+    border-radius: 10px;
+    display: block;
+}
+.header__area svg{
+    border-radius: 10px;
+    display: block;
+     
+}
+.btn__area{
+    margin: 18px 0;
+}
+.btn__area .btn{
+    margin: 10px 0;
+    border: 0;
+    padding: 8px 15px;
+    font-size:14px;
+    font-weight:600;
+    background-color: var(--Yellow);
+    border-radius: 5px;
+
+}
+.main__area{
+    width: 330px;
+    margin-bottom: 15px;
+  
+}
+.main__area h1:hover{
+    color: var(--Yellow);
+   transition: .5s;
+}
+.main__area p{
+    color: var(--Gray-500);
+    margin: 15px 0;
+    line-height: 1.5rem;
+}
+.footer__area{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer__area img{
+    width: 50px;
+}
+.footer__area span{
+   font-weight: 700;
+}
+@media (max-width:375px){
+    .card__area{
+       margin: 40px;  
+         
+    }
+    .header__area svg{
+        width: 320px;
+        border-radius:10%;
+        display:block;
+        
+    }
+    .main__area{
+        width: 310px;
+        margin-bottom: 15px;
+      
+    }
+   
+}
