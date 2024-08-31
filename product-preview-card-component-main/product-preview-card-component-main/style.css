@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+:root{
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+/* font */
+--Montserrat:'Montserrat';
+--Fraunces:'Fraunces';
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p,button{
+    font-family: var(--Montserrat);
+}
+span,h1{
+    font-family: var(--Fraunces);
+}
+body{
+    background-color: var(--Cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 14px;
+    
+}
+.container__area{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    background-color: var(--White);
+    width: 700px;
+   border-radius: 10px;
+   overflow: hidden;
+   margin: 20px;
+     
+}
+
+
+.img__area{
+    background-image: url('./images/image-product-desktop.jpg');
+    background-position: center;
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+.content__area{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+}
+.content__area header{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.content__area header p{
+   text-transform: uppercase;
+   color: var(--Dark-grayish-blue);
+   letter-spacing: 0.4rem;
+   font-size: small;
+
+}
+.content__area header h1{
+  font-size: 2.5rem;
+  line-height: 2.6rem;
+}
+.content__area main{
+  line-height: 1.5rem;
+  color: var(--Dark-grayish-blue);
+  
+}
+.content__area main p{
+  line-height: 1.5rem;
+  color: var(--Dark-grayish-blue);
+  width: 230px;
+}
+.content__area footer{
+  display:flex ;
+  flex-direction: column;
+  gap: 20px;
+}
+.content__area footer div{
+  display:flex ;
+   align-items: center;
+   gap: 30px;
+    
+}
+.content__area footer div span{
+   font-size: 1.8rem;
+   font-weight: 700;
+   color: var(--Dark-cyan);
+    
+}
+.content__area footer div  p{
+   font-size:small;
+   font-weight: 400;
+   color: var(--Dark-grayish-blue);
+    text-decoration: line-through;
+}
+.content__area footer button{
+   font-size:14px;
+   font-weight: 600;
+   color: var(--White);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   background-color: var(--Dark-cyan);
+   border: 0;
+   padding: 15px 0;
+   border-radius: 10px;
+    
+}
+@media(max-width:680px){
+     
+    .container__area{
+        display: grid;
+        grid-template-columns:1fr;
+       grid-template-rows: 1fr 1fr;
+        height: 700px;
+        
+       
+         
+    }
+    .img__area{
+        background-image: url('./images/image-product-mobile.jpg');
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+    .content__area{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+       
+    }
+    .content__area main p{
+        line-height: 1.5rem;
+        color: var(--Dark-grayish-blue);
+         width: 100%;
+      }
+}
